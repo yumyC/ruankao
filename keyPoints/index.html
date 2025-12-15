@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>软考中级软件设计师 - 知识点检索平台</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- 头部 -->
+        <header class="header">
+            <h1>🎯 软考中级软件设计师</h1>
+            <p class="subtitle">重点知识点检索平台 - 用最少的内容，拿最多的分</p>
+        </header>
+
+        <!-- 搜索区域 -->
+        <div class="search-section">
+            <div class="search-box">
+                <input type="text" id="searchInput" placeholder="搜索知识点、关键词..." />
+                <button id="searchBtn">🔍 搜索</button>
+            </div>
+            <div class="search-filters">
+                <select id="categoryFilter">
+                    <option value="">全部分类</option>
+                    <option value="SE">软件工程基础</option>
+                    <option value="OO">面向对象技术</option>
+                    <option value="DB">数据库技术</option>
+                    <option value="DS">数据结构算法</option>
+                    <option value="CS">计算机系统</option>
+                    <option value="PM">项目管理</option>
+                </select>
+                <select id="importanceFilter">
+                    <option value="">全部重要性</option>
+                    <option value="高">高频必考</option>
+                    <option value="中">中频重点</option>
+                    <option value="低">了解即可</option>
+                </select>
+                <select id="typeFilter">
+                    <option value="">全部题型</option>
+                    <option value="选择题">选择题</option>
+                    <option value="案例题">案例题</option>
+                </select>
+            </div>
+        </div>
+
+        <!-- 统计信息 -->
+        <div class="stats-section">
+            <div class="stat-item">
+                <span class="stat-number" id="totalCount">0</span>
+                <span class="stat-label">总知识点</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number" id="highCount">0</span>
+                <span class="stat-label">高频考点</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number" id="mustLearnCount">0</span>
+                <span class="stat-label">必背内容</span>
+            </div>
+        </div>
+
+        <!-- 知识点列表 -->
+        <div class="knowledge-section">
+            <div class="section-header">
+                <h2>📚 知识点列表</h2>
+                <div class="view-toggle">
+                    <button id="listView" class="active">列表视图</button>
+                    <button id="cardView">卡片视图</button>
+                </div>
+            </div>
+            <div id="knowledgeList" class="knowledge-list"></div>
+        </div>
+
+        <!-- 知识点详情模态框 -->
+        <div id="detailModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <div id="detailContent"></div>
+            </div>
+        </div>
+
+        <!-- 快速导航 -->
+        <div class="quick-nav">
+            <h3>🚀 快速导航</h3>
+            <div class="nav-categories">
+                <div class="nav-category" data-category="SE">
+                    <h4>软件工程基础</h4>
+                    <span class="category-count">6个知识点</span>
+                </div>
+                <div class="nav-category" data-category="OO">
+                    <h4>面向对象技术</h4>
+                    <span class="category-count">6个知识点</span>
+                </div>
+                <div class="nav-category" data-category="DB">
+                    <h4>数据库技术</h4>
+                    <span class="category-count">6个知识点</span>
+                </div>
+                <div class="nav-category" data-category="DS">
+                    <h4>数据结构算法</h4>
+                    <span class="category-count">6个知识点</span>
+                </div>
+                <div class="nav-category" data-category="CS">
+                    <h4>计算机系统</h4>
+                    <span class="category-count">5个知识点</span>
+                </div>
+                <div class="nav-category" data-category="PM">
+                    <h4>项目管理</h4>
+                    <span class="category-count">5个知识点</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

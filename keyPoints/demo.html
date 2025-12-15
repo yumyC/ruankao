@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>功能演示 - 软考知识点检索平台</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background: #f5f5f5;
+        }
+        .demo-container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #333;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .feature {
+            margin-bottom: 25px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border-left: 4px solid #667eea;
+        }
+        .feature h3 {
+            color: #667eea;
+            margin-bottom: 10px;
+        }
+        .demo-link {
+            display: inline-block;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius: 25px;
+            margin: 10px auto;
+            display: block;
+            text-align: center;
+            width: 200px;
+            transition: transform 0.2s;
+        }
+        .demo-link:hover {
+            transform: translateY(-2px);
+        }
+        .stats {
+            display: flex;
+            justify-content: space-around;
+            margin: 30px 0;
+            text-align: center;
+        }
+        .stat {
+            padding: 15px;
+        }
+        .stat-number {
+            font-size: 2rem;
+            font-weight: bold;
+            color: #667eea;
+        }
+        .stat-label {
+            color: #666;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="demo-container">
+        <h1>🎯 软考中级软件设计师 - 知识点检索平台</h1>
+        
+        <div class="stats">
+            <div class="stat">
+                <div class="stat-number">6</div>
+                <div class="stat-label">知识点文档</div>
+            </div>
+            <div class="stat">
+                <div class="stat-number">5</div>
+                <div class="stat-label">高频考点</div>
+            </div>
+            <div class="stat">
+                <div class="stat-number">5</div>
+                <div class="stat-label">必背内容</div>
+            </div>
+        </div>
+
+        <a href="index.html" class="demo-link">🚀 进入检索平台</a>
+
+        <div class="feature">
+            <h3>📚 标准化知识点文档库</h3>
+            <p>每个知识点严格按照7段式结构编写：考试重要性、一句话结论、核心考点、典型真题考法、易错点&命题陷阱、记忆技巧、例题。突出考试导向，确保"用最少的内容，拿最多的分"。</p>
+        </div>
+
+        <div class="feature">
+            <h3>🔍 智能检索功能</h3>
+            <p>支持全文搜索、多维筛选（分类、重要性、题型）、实时搜索。可以通过知识点标题、内容、关键词快速定位所需内容。</p>
+        </div>
+
+        <div class="feature">
+            <h3>📱 现代化界面设计</h3>
+            <p>响应式设计，完美适配桌面、平板、手机。提供列表视图和卡片视图两种展示模式，操作流畅，视觉美观。</p>
+        </div>
+
+        <div class="feature">
+            <h3>📖 详细内容查看</h3>
+            <p>点击任意知识点可查看完整的Markdown格式内容，包含完整的考点分析、记忆技巧和例题解析。</p>
+        </div>
+
+        <div class="feature">
+            <h3>🎯 考试重点突出</h3>
+            <p>明确标注每个知识点的考察频率（高/中/低）、出现题型（选择题/案例题）、是否必背，帮助考生合理分配学习时间。</p>
+        </div>
+
+        <div class="feature">
+            <h3>📊 统计信息展示</h3>
+            <p>实时显示总知识点数、高频考点数、必背内容数等统计信息，帮助考生了解学习进度。</p>
+        </div>
+
+        <h2>📋 已收录知识点</h2>
+        <ul>
+            <li><strong>SE001</strong> - 软件生命周期模型 (高频必考)</li>
+            <li><strong>SE002</strong> - 需求工程 (高频必考)</li>
+            <li><strong>OO001</strong> - 面向对象基本概念 (高频必考)</li>
+            <li><strong>OO002</strong> - UML用例图 (高频必考)</li>
+            <li><strong>DB001</strong> - 关系数据库理论 (高频必考)</li>
+            <li><strong>DS001</strong> - 线性数据结构 (中频重点)</li>
+        </ul>
+
+        <h2>🚀 使用方法</h2>
+        <ol>
+            <li>点击上方"进入检索平台"按钮</li>
+            <li>使用搜索框输入关键词进行搜索</li>
+            <li>使用筛选器按分类、重要性、题型筛选</li>
+            <li>点击知识点卡片查看详细内容</li>
+            <li>使用快速导航按分类浏览</li>
+        </ol>
+
+        <p style="text-align: center; color: #666; margin-top: 30px;">
+            本平台完全基于前端技术实现，无需后端服务器，可直接在浏览器中使用。<br>
+            所有知识点文档采用Markdown格式，便于维护和扩展。
+        </p>
+    </div>
+</body>
+</html>
